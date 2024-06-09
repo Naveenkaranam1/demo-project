@@ -180,16 +180,6 @@
   </section>
 
 
-
-
-
-
-
-
-
-
-
-
   <script>
     const homePageEl = document.getElementById('homePage');
     const DetailsPageEl = document.getElementById('DetailsPage');
@@ -216,19 +206,19 @@
 
 
     function myfunction1(){
-    const userNameValue = document.getElementById('userName').value;
-    const userPasswordValue = document.getElementById('userPassword').value;
-    const loginValidEl = document.getElementById('loginValid');
-      if(userNameValue !== '' && userPasswordValue !== ''){
-        loginPageEl.classList.add('display-none');
-        homePageEl.classList.remove('display-none');
-        loginValidEl.textContent = '';
-      }else{
-        loginValidEl.textContent = "Please Enter Details"
-        loginValidEl.style.color = 'darkred';
-        loginValidEl.style.textDecoration = 'none';
-        loginValidEl.style.fontWeight = 'bold';
-      }
+      const userNameValue = document.getElementById('userName').value;
+      const userPasswordValue = document.getElementById('userPassword').value;
+      const loginValidEl = document.getElementById('loginValid');
+        if(userNameValue !== '' && userPasswordValue !== ''){
+          loginPageEl.classList.add('display-none');
+          homePageEl.classList.remove('display-none');
+          loginValidEl.textContent = '';
+        }else{
+          loginValidEl.textContent = "Please Enter Details"
+          loginValidEl.style.color = 'darkred';
+          loginValidEl.style.textDecoration = 'none';
+          loginValidEl.style.fontWeight = 'bold';
+        }
     }
 
     function myfunction2(){
